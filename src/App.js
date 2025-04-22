@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chat App</h1>
+      <h1>Chat App Updated</h1>
       <input
         placeholder="Your name"
         value={username}
