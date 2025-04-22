@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 
-const socket = new WebSocket("ws://localhost:4000");
+const socket = new WebSocket("ws://15.206.125.183:4000");
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -10,7 +10,7 @@ function App() {
   const inputRef = useRef();
 
   useEffect(() => {
-    fetch("http://localhost:4000/messages")
+    fetch("http://15.206.125.183:4000/messages")
       .then((res) => res.json())
       .then((data) => setMessages(data.reverse()));
 
